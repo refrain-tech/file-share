@@ -21,7 +21,7 @@
 				ref.put(file).then(snapshot => ref.getDownloadURL().then(url => database.ref("share").push({
 					name: file.name,
 					url: url
-				})));
+				})).catch(error => console.log(error))).catch(error => console.log(error));
 			});
 			SELECTED_FILE = null;
 		}
