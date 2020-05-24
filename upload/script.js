@@ -10,7 +10,6 @@
 		projectId: "refrain-tech-file-share",
 		storageBucket: "refrain-tech-file-share.appspot.com"
 	});
-	firebase.analytics();
 	const database = firebase.database();
 	const storage = firebase.storage();
 	let SELECTED_FILE = null;
