@@ -20,7 +20,7 @@ upload.addEventListener("click", event => {
 			ref.put(file).then(snapshot => ref.getDownloadURL().then(url => database.ref("share").push({
 				name: file.name,
 				url: url
-			})).catch(console.log(error)).catch(console.log);
+			})).catch(console.log).catch(console.log);
 			});
 		SELECTED_FILE = null;
 	}
