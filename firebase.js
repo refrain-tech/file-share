@@ -10,3 +10,4 @@ firebase.initializeApp({
   storageBucket: 'refrain-tech-file-share.appspot.com'
 });
 const database = firebase.database();
+const storage = firebase.storage();
